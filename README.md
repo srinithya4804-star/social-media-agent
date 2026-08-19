@@ -1,6 +1,6 @@
 # Social Media Content Planning AI Agent
 
--> Overview
+## Overview
 
 This project is an AI-powered social media content planning agent built for the Rooman AI Challenge.
 
@@ -12,7 +12,7 @@ The generated calendar is validated before being saved as JSON and CSV files.
 
 ---
 
--> Features
+## Features
 
 * Generates a 7-day social media content calendar
 * Creates platform-specific content ideas
@@ -30,7 +30,7 @@ The generated calendar is validated before being saved as JSON and CSV files.
 
 ---
 
--> Tech Stack
+## Tech Stack
 
 * Python
 * Google Gemini API
@@ -41,9 +41,9 @@ The generated calendar is validated before being saved as JSON and CSV files.
 
 ---
 
--> Project Structure
+## Project Structure
 
-
+```text
 social-media-agent/
 │
 ├── agent.py
@@ -59,16 +59,17 @@ social-media-agent/
 │   └── content_calendar.csv
 │
 └── venv/
-
+```
 
 The `.env` file and virtual environment are intentionally excluded from version control.
 
 ---
 
--> How It Works
+## How It Works
 
 The agent follows this workflow:
 
+```text
 Brand Brief
     ↓
 Python Application
@@ -82,19 +83,19 @@ Structured Calendar
 Pydantic Validation
     ↓
 JSON + CSV Output
-
+```
 
 The LLM is used as the reasoning and content-generation component, while Python handles orchestration, input loading, validation, and output storage.
 
 ---
 
--> Input
+## Input
 
 The agent reads the sample brand information from:
 
-
+```text
 data/sample_brand.json
-
+```
 
 Example:
 
@@ -122,14 +123,14 @@ The same agent can generate different calendars when the brand brief is changed.
 
 ---
 
--> Output
+## Output
 
 The generated files are stored in:
 
-
+```text
 outputs/content_calendar.json
 outputs/content_calendar.csv
-
+```
 
 Each calendar entry contains:
 
@@ -144,44 +145,54 @@ Each calendar entry contains:
 
 ---
 
--> Setup
+## Setup
 
-1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd social-media-agent
 ```
 
-2. Create a virtual environment
+### 2. Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-On Windows: venv\Scripts\activate
+On Windows:
 
-3. Install dependencies
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Configure the API key
+### 4. Configure the API key
 
-Create a `.env` file in the project root: GEMINI_API_KEY=your_api_key_here
+Create a `.env` file in the project root:
+
+```text
+GEMINI_API_KEY=your_api_key_here
+```
 
 The API key should not be committed to GitHub.
 
-5. Run the agent
+### 5. Run the agent
+
 ```bash
 python agent.py
 ```
+
 The generated calendar will be displayed in the terminal and saved to the `outputs` directory.
 
 ---
 
--> Validation
+## Validation
 
 The agent validates the generated output before saving it.
 
@@ -199,31 +210,31 @@ This prevents malformed or low-quality model output from being silently accepted
 
 ---
 
--> Design Choices
+## Design Choices
 
-Q1. Why Python?
+### Why Python?
 
 Python provides a simple environment for integrating with an LLM API and implementing data processing and validation.
 
-Q2. Why Gemini?
+### Why Gemini?
 
 Gemini provides the language-model capabilities required for generating the content calendar while allowing the project to be developed using an available API free tier.
 
-Q3. Why structured output?
+### Why structured output?
 
 The application requires predictable fields for each day. Structured output makes the LLM response easier to validate and process programmatically.
 
-Q4. Why Pydantic?
+### Why Pydantic?
 
 Pydantic provides schema validation for the generated calendar and ensures that the application receives the expected structure before saving the result.
 
-Q5. Why JSON and CSV?
+### Why JSON and CSV?
 
 JSON preserves the structured representation of the generated calendar, while CSV provides a convenient format for viewing and working with the calendar in spreadsheet software.
 
 ---
 
--> Tradeoffs
+## Tradeoffs
 
 The project prioritizes a reliable end-to-end workflow over a complex user interface.
 
@@ -233,7 +244,7 @@ The system also uses an LLM for content generation instead of training a custom 
 
 ---
 
--> Limitations
+## Limitations
 
 * Suggested posting times are generated recommendations and are not based on historical engagement analytics.
 * The agent does not directly publish content to social media platforms.
@@ -243,7 +254,7 @@ The system also uses an LLM for content generation instead of training a custom 
 
 ---
 
--> Future Improvements
+## Future Improvements
 
 With additional development time, the agent could be extended with:
 
@@ -258,23 +269,25 @@ With additional development time, the agent could be extended with:
 
 ---
 
--> Sample Output
+## Sample Output
 
 A sample generated calendar is included in:
 
+```text
 outputs/content_calendar.json
 outputs/content_calendar.csv
+```
 
 The agent can be run with different brand briefs to produce different content calendars.
 
 ---
 
-->Conclusion
+## Conclusion
 
 This project demonstrates an end-to-end AI agent workflow:
 
+```text
 Input → Reason → Generate → Validate → Store
+```
 
 The focus is on producing a practical, reproducible, and explainable social media content planning agent rather than simply generating individual captions.
-
----
