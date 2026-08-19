@@ -1,0 +1,109 @@
+{
+  "calendar": [
+    {
+      "day": "Monday",
+      "platform": "Instagram",
+      "content_type": "Carousel",
+      "topic": "Skincare Layering Order",
+      "caption": "Confused about what goes first? Here is a simple guide to layering your daily skincare step-by-step for maximum routine clarity!",
+      "hashtags": [
+        "#SkincareRoutine",
+        "#SkincareTips",
+        "#GlowNest",
+        "#BeautyBasics"
+      ],
+      "suggested_time": "09:00 AM",
+      "reason": "Educational carousel posts build authority and drive high save rates on Instagram."
+    },
+    {
+      "day": "Tuesday",
+      "platform": "Instagram",
+      "content_type": "Reel",
+      "topic": "Morning Skincare vs Night Skincare",
+      "caption": "Your skin has different needs depending on the time of day! Keep your morning routine focused on protection and your evening routine on nourishment.",
+      "hashtags": [
+        "#MorningRoutine",
+        "#NighttimeSkincare",
+        "#GlowNest",
+        "#SkincareEducation"
+      ],
+      "suggested_time": "12:30 PM",
+      "reason": "Video content comparing routines engages viewers and encourages comments and shares."
+    },
+    {
+      "day": "Wednesday",
+      "platform": "Instagram",
+      "content_type": "Single Image",
+      "topic": "Mid-Week Self-Care Mindset",
+      "caption": "Gentle reminder: taking 5 minutes for your skincare routine is a form of self-love. Unwind and breathe today!",
+      "hashtags": [
+        "#SelfCareWednesday",
+        "#MindfulBeauty",
+        "#GlowNest",
+        "#Wellness"
+      ],
+      "suggested_time": "06:00 PM",
+      "reason": "Relatable lifestyle content connects emotionally with the target audience without selling."
+    },
+    {
+      "day": "Thursday",
+      "platform": "Instagram",
+      "content_type": "Carousel",
+      "topic": "Understanding Hydration vs Moisture",
+      "caption": "Is your skin thirsty or dry? Knowing the difference between hydrating (water) and moisturizing (oil) can help you choose the right steps for your routine.",
+      "hashtags": [
+        "#Hydration",
+        "#SkincareFacts",
+        "#GlowNest",
+        "#HealthySkin"
+      ],
+      "suggested_time": "10:00 AM",
+      "reason": "Demystifying skincare jargon establishes brand trust and authority."
+    },
+    {
+      "day": "Friday",
+      "platform": "Instagram",
+      "content_type": "Reel",
+      "topic": "3 Common Skincare Mistakes to Avoid",
+      "caption": "Over-exfoliating? Skipping sun protection? Here are three common habits to pause today for a happier skin barrier.",
+      "hashtags": [
+        "#SkincareMistakes",
+        "#SkincareTips",
+        "#GlowNest",
+        "#GlowGuide"
+      ],
+      "suggested_time": "05:00 PM",
+      "reason": "Informative reel format catches attention before the weekend and encourages engagement."
+    },
+    {
+      "day": "Saturday",
+      "platform": "Instagram",
+      "content_type": "Single Image",
+      "topic": "Weekend GlowNest Minimalist Routine",
+      "caption": "Keep it simple this weekend! A gentle cleanser, a soothing moisturizer, and daily sun protection are all you need for a quick minimalist routine.",
+      "hashtags": [
+        "#MinimalistSkincare",
+        "#WeekendVibes",
+        "#GlowNest",
+        "#SimpleSkincare"
+      ],
+      "suggested_time": "11:00 AM",
+      "reason": "Highlights the brand philosophy of simple, effective skincare during peak weekend leisure hours."
+    },
+    {
+      "day": "Sunday",
+      "platform": "Instagram",
+      "content_type": "Reel",
+      "topic": "Reset Your Skin Barrier for the Week Ahead",
+      "caption": "Sunday is for resetting! Take time to focus on gentle hydration and resting your skin before starting a fresh week.",
+      "hashtags": [
+        "#SundayReset",
+        "#SkinBarrier",
+        "#GlowNest",
+        "#SelfCareSunday"
+      ],
+      "suggested_time": "07:00 PM",
+      "reason": "Tap into the popular Sunday Reset trend to align with the target audience weekly habits."
+    }
+  ]
+}
